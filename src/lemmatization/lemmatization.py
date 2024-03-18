@@ -1,9 +1,15 @@
+import sys
+import os
 import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import word_tokenize
 from nltk.corpus import wordnet
 
-NLTK_DATA_PATH = 'var/nltk'
+
+sys.path.append('.')
+from src.variables import BASE_DIR
+
+NLTK_DATA_PATH = os.path.join(BASE_DIR,'var/nltk')
 
 # Download WordNet resources if not already downloaded
 nltk.download('wordnet',NLTK_DATA_PATH)
