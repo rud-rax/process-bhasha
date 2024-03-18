@@ -1,10 +1,6 @@
 from nltk.stem import PorterStemmer , SnowballStemmer
 from nltk.tokenize import word_tokenize
 
-# Initialize the Stemmers
-
-
-
 
 class Stemming : 
 
